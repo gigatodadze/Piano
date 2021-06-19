@@ -12,6 +12,9 @@ $(document).ready(function(){
 
         console.log(selected);
 
+        var audio = selected.attr('src')[0]
+        audio.play();
+
         $(event.target.id).find("audio").each(function (){
         console.log("1")
             var audio = $(this).attr('id')[0]
